@@ -1,10 +1,10 @@
-'use strict';
-console.log(getDiagonal(twoD([11,2,4,4,5,6,10,8,-12])))
-
 let diagonals = getDiagonal(twoD([11,2,4,4,5,6,10,8,-12]));
-console.log(Math.abs(diagonals.rightDiagonal - diagonals.leftDiagonal));
 
-function getDiagonal(array2D){
+/* 
+  @params: a two dimensional array representing a square matrix
+  @returns: an object containing the right diagonal and left diaogonal sums of the square matrix
+*/
+function getDiagonal(array2D){ 
   let rightDiagonal = 0;
   let leftDiagonal = 0;
   right: for(let i = 0; i < array2D.length; i++){
@@ -18,6 +18,11 @@ function getDiagonal(array2D){
   return {rightDiagonal: rightDiagonal, leftDiagonal: leftDiagonal}
 }
 
+/*
+  @description: converts an array of n numbers into an n^0.5 matrix 
+  @params: an array of numbers
+  @returns:  a two dimensional array representing a square matrix
+*/
 function twoD(arr){  //parses arr into 2D array
   let n = Math.sqrt(arr.length);
   let array2D = [[]];
