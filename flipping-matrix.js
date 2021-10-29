@@ -7,7 +7,7 @@ flippingMatrix([[1,2,3],[4,5,6],[7,8,9]])
 */
 function flippingMatrix(matrix) {
   
-  // 1,2,3
+  // 1,2,3,4,5,11,10,8,9,7,6
   // 4,5,6
   // 7,8,9
 }
